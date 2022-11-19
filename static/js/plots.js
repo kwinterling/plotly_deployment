@@ -75,9 +75,29 @@ function myScatter(divID) {
     Plotly.newPlot(divID, data, layout);
 }
 
+function topCities(n, divID) {
+    var topNCityNames = cityGrowths.map(city => city.City);
+    var topNCityGrowths = cityGrowths.map(city => parseInt(city.Increase_from_2016));
+    topNCityNames = topNCityNames.slice(0, n);
+    topNCityGrowths = topNCityGrowths.slice(0, n);
 
+    var trace = {
+        x: topNCityNames,
+        y: topNCityGrowths,
+        type: "bar"
+    };
+    var data = [trace];
+    var layout = {
+        title: "Most Rapidly Growing Cities",
+        xaxis: { title: "City" },
+        yaxis: { title: "Population Growth, 2016-2017" }
+    };
+    Plotly.newPlot(divID, data, layout);
+}
 
 nonAlcoholicBarGraph("nonalcoholic");
 nonalcoholicPieChart("pie-chart1");
 myScatter("scatterplot1");
+topCities(5, "top-five");
+topCities(7, "top-seven");
 
