@@ -69,11 +69,13 @@ function myScatter(divID) {
     var data = [trace];
     var layout = {
         title: "Scatter Plot",
-        xaxis: {title: "x-axis"},
-        yaxis: {title: "y-axis"}
+        xaxis: { title: "x-axis" },
+        yaxis: { title: "y-axis" }
     };
     Plotly.newPlot(divID, data, layout);
 }
+
+
 
 nonAlcoholicBarGraph("nonalcoholic");
 nonalcoholicPieChart("pie-chart1");
