@@ -6,4 +6,4 @@ The purpose of this project is to build a data dashboard using the Plotly JavaSc
 
 ## Live Dashboard
 
-Visit ![kwinterling.github.io/plotly_deployment](https://kwinterling.github.io/plotly_deployment) to access the dashboard on GitHub Pages.
+Visit [kwinterling.github.io/plotly_deployment](https://kwinterling.github.io/plotly_deployment) to access the dashboard on GitHub Pages.
